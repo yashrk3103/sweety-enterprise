@@ -2,7 +2,7 @@ name: Deploy Next.js site to GitHub Pages
 
 on:
   push:
-    branches: ["copilot/build-sweety-enterprise-website"]
+    branches: ["main"]   # changed from copilot/... branch
   workflow_dispatch:
 
 permissions:
@@ -24,7 +24,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24   # changed from 20
           cache: npm
 
       - name: Setup Pages
