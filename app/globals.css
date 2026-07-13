@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ivory: #fffaf2;
+  --cream: #f8ecd9;
+  --maroon: #651931;
+  --gold: #d4a64a;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--ivory);
+  color: var(--maroon);
+  font-family: var(--font-body), sans-serif;
+}
+
+.font-heading {
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+.bg-ivory {
+  background-color: var(--ivory);
+}
+
+.bg-maroon {
+  background-color: var(--maroon);
+}
+
+.bg-cream {
+  background-color: var(--cream);
+}
+
+.text-maroon {
+  color: var(--maroon);
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.text-cream {
+  color: var(--cream);
+}
+
+.border-gold {
+  border-color: var(--gold);
+}
+
+.hover-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(101, 25, 49, 0.12);
+}
