@@ -20,6 +20,12 @@ const serviceCategories = [
     image:
       "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80",
   },
+  {
+    title: "Mehndi Hand Work",
+    description: "Beautiful traditional mehndi hand work by our in-house artist, available for festivals, weddings, and special occasions.",
+    image:
+      "https://images.pexels.com/photos/2659721/pexels-photo-2659721.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  },
 ];
 
 const whyChooseUs = [
@@ -70,11 +76,16 @@ export default function HomePage() {
             View all services
           </Link>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {serviceCategories.map((service) => (
             <Link key={service.title} href="/services" className="hover-lift overflow-hidden rounded-2xl border border-maroon/10 bg-white">
               <div className="relative h-48 w-full">
-                <Image src={service.image} alt={service.title} fill className="object-cover" />
+                <Image
+                  src={service.image}
+                  alt={service.title === "Mehndi Hand Work" ? "Intricate mehndi design on an open hand" : service.title}
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="p-5">
                 <h3 className="font-heading text-xl font-semibold">{service.title}</h3>

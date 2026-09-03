@@ -23,7 +23,7 @@ const initialState: ContactFormState = {
   name: "",
   email: "",
   phone: "",
-  eventType: "Wedding Management",
+  eventType: "",
   message: "",
 };
 
@@ -136,16 +136,19 @@ export function ContactForm() {
         <select
           id="eventType"
           name="event_type"
+          required
           value={form.eventType}
           onChange={(event) => setForm((prev) => ({ ...prev, eventType: event.target.value }))}
           className="w-full rounded-lg border border-maroon/20 px-3 py-2 text-sm outline-none transition focus:border-gold"
         >
+          <option value="" disabled hidden>
+            Select The Event Type
+          </option>
           <option>Wedding Management</option>
           <option>Birthday &amp; Personal Celebrations</option>
           <option>Corporate Events</option>
           <option>Social &amp; Cultural Functions</option>
-          <option>Vendor Alignment &amp; Coordination</option>
-          <option>On-Site Supervision</option>
+          <option>Mehndi Hand Work</option>
         </select>
       </div>
 

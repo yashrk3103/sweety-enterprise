@@ -4,7 +4,7 @@ export default function ContactPage() {
   return (
     <div className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
       <h1 className="font-heading text-4xl font-semibold text-maroon">Contact Us</h1>
-      <p className="mt-3 text-sm leading-7 text-maroon/80">Tell us about your event and we will get in touch for a free consultation.</p>
+      <p className="mt-3 text-sm leading-7 text-maroon/80">Tell us about your event or mehndi hand-work needs, and we will connect you with our team or mehndi artist for a free consultation.</p>
 
       <div className="mt-10 grid gap-8 lg:grid-cols-2">
         <div className="space-y-6">

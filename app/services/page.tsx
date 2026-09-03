@@ -23,6 +23,10 @@ const services = [
     title: "On-Site Supervision",
     tagline: "We're there so you don't have to worry.",
   },
+  {
+    title: "Mehndi Hand Work",
+    tagline: "Our in-house mehndi artist creates beautiful hand designs for festivals, weddings, and special occasions.",
+  },
 ];
 
 export default function ServicesPage() {
@@ -30,7 +34,7 @@ export default function ServicesPage() {
     <div className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
       <h1 className="font-heading text-4xl font-semibold text-maroon">Our Services</h1>
       <p className="mt-3 max-w-3xl text-sm leading-7 text-maroon/80">
-        End-to-end planning and event operations tailored for your occasion, team, and timeline.
+        End-to-end planning and event operations tailored for your occasion, team, and timeline, along with personal mehndi hand work for your celebrations.
       </p>
       <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service) => (
